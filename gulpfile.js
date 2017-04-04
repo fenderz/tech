@@ -53,6 +53,7 @@ gulp.task('htmlTemplates', ['styles', 'scripts'],  function() {
 gulp.task('watch', function () {
     gulp.watch('app/assets/**/*.{styl,css}', ['styles']);
     gulp.watch(scriptsPath, ['scripts']);
+    gulp.watch(templatesPath + '*.html', ['htmlTemplates']);
 });
 
 gulp.task('startServer', function() {
