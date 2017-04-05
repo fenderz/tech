@@ -1,0 +1,66 @@
+.button
+    display: inline-block
+    vertical-align: middle
+    height: 53px
+    min-width: 135px
+    background-color: $color-white
+    font-family: $font-family-lato
+    font-size: 18px
+    line-height: @height
+    color: $color-blue
+    padding: 0 30px
+    border: 1px solid $btn-color-blue
+    border-radius: 3px
+    text-decoration: none
+    cursor: pointer
+    transition: background-color $animation-time $timing-function, color $animation-time $timing-function
+
+    &:hover
+    &:focus
+    &:active
+        background-color: $button-color-lightness-blue
+        border-color: $button-color-darkness-blue
+        outline: none
+        color: $button-color-darkness-blue
+
+        a&
+            color: $button-color-darkness-blue
+
+    &:active
+        line-height: @height + 1px
+        box-shadow: inset 0 2px 1px $btn-color-blue
+
+    &_full-width
+        width: 100%
+
+    // Size
+    &_small
+        height: 34px
+        min-width: 60px
+        font-size: 14px
+        line-height: @height
+        padding: 0 15px
+
+        &:active
+            line-height: @height + 1px
+            box-shadow: inset 0 2px 1px $btn-color-blue
+
+    // Colors
+    &_blue
+        background: $btn-color-blue
+        color: $color-white
+        border-color: $btn-color-blue
+
+        &:hover
+        &:focus
+        &:active
+            background: $btn-color-light-blue
+            border-color: $btn-color-light-blue
+            color: $color-white
+
+            a&
+                color: $color-white
+
+        &:active
+            box-shadow: inset 0 2px 1px $button-color-darkness-blue
+
