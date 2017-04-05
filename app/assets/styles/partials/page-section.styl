@@ -1,0 +1,48 @@
+.page-section
+    &__content
+        margin: 0 auto
+        width: $grid-hd
+        position: relative
+        text-align: center
+        box-sizing: border-box
+        padding: 50px 0
+
+    &__title
+        title(2)
+        margin-bottom: 20px
+
+    &__text
+        color: $color-gray
+        title(3)
+
+    &__cover
+        background: url($bg-url + 'cover.jpg') no-repeat 0 0;
+        background-size: cover
+        height: $cover-height + 100px
+        position: absolute
+        width: 100%
+        top: -50px
+
+    //MOD cover block
+    &_cover
+        height: $cover-height
+        overflow: hidden
+        position: relative
+
+        & ^[0]__title
+            title(1)
+            color: $color-white
+            letter-spacing: 2px;
+            display: inline-block
+            vertical-align: middle
+            margin: 0
+
+        & ^[0]__content
+            height: $cover-height
+            padding: 0
+
+            &::before
+                content: ''
+                height: $cover-height
+                display: inline-block
+                vertical-align: middle
