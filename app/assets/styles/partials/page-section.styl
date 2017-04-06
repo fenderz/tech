@@ -1,11 +1,14 @@
 .page-section
     &__content
         margin: 0 auto
-        width: $grid-hd
+        max-width: $grid-hd
         position: relative
         text-align: center
         box-sizing: border-box
-        padding: 50px 0
+        padding: 50px 80px 70px
+
+        &_underline
+            border-bottom: 1px solid $color-border-gray
 
     &__title
         title(2)
@@ -14,17 +17,17 @@
     &__text
         title(3)
         color: $color-gray
-        margin-bottom: 20px
+        margin-bottom: 40px
 
     &__cover
-        background: url($bg-url + 'cover.jpg') no-repeat 0 0;
+        background: url($bg-url + 'cover.jpg') no-repeat 50% 0;
         background-size: cover
         height: $cover-height + 100px
         position: absolute
         width: 100%
         top: -50px
 
-    //MOD cover block
+    //MOD Cover block
     &_cover
         height: $cover-height
         overflow: hidden
@@ -47,3 +50,33 @@
                 height: $cover-height
                 display: inline-block
                 vertical-align: middle
+
+    //MOD Video block
+    &_video
+        background: $color-soft-gray
+
+@media $media-tablet
+    .page-section
+        &__content
+            padding: 30px 18px
+
+@media $media-mobile
+    .page-section
+        min-width: 300px
+
+        &__content
+            padding: 30px 18px
+
+        &__title
+            font-size: 22px
+            font-family: $font-family-lato-bold
+            margin-bottom: 20px
+
+        &__text
+            font-size: 16px
+            font-family: $font-family-lato
+            margin-bottom: 40px
+
+        &_cover
+            & ^[0]__title
+                font-size: 46px
