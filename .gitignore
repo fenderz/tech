@@ -11,7 +11,8 @@ bower_components
 .*
 
 # Contains root compiled assets #
-public/**
+public/img/**
+public/scripts/**
 dist/**
 
 # Logs #

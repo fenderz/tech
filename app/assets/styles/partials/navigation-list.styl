@@ -1,0 +1,27 @@
+.navigation-list
+    display: inline-block
+    vertical-align: middle
+
+    &__item
+        display: inline-block
+        vertical-align: middle
+        margin-right: 20px
+        padding-bottom: 10px
+
+        &_active
+            border-bottom: 2px solid $color-yellow
+
+        &:last-child
+            margin-right: 0
+
+    &__link
+        font: 400 16px/1.3 $font-family-lato
+        color: $color-white
+        display: block
+        text-decoration: none
+        transition: color $animation-time $timing-function
+
+        ^[0]__item_active &
+        &:hover
+            color: $color-yellow
+

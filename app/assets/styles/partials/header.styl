@@ -4,16 +4,63 @@
     position: fixed
     top: 0
     z-index: 10
-    height: $header-height
 
     &__content
         margin: 0 auto
         max-width: $grid-hd
         box-sizing: border-box
-        padding: 10px 5px
+        padding: 10px 5px 0 10px
+        position: relative
+        height: $header-height
 
     &__logo-link
         display: inline-block
 
     &__nav
+        position: absolute
+        left: 205px
+        bottom: 0
+        cursor: pointer
+
+    &__nav-icon
         display: none
+        position: absolute
+        right: 15px
+        top: 50%
+        margin: -7px 0 0 -11px
+        width: 22px
+        height: 14px
+
+        &:after
+        &:before
+            display: block
+            content: ''
+            position: absolute
+            width: 100%
+            left: 0
+            height: 2px
+            background: $color-white
+
+        &:before
+            top: 0
+
+        &:after
+            bottom: 0
+
+        &-stripe
+            display: block
+            position: absolute
+            width: 100%
+            left: 0
+            height: 2px
+            top: 6px
+            background: $color-white
+
+@media $media-mobile
+
+   .header
+       &__nav-icon
+           display: block
+
+       &__nav
+           display: none
