@@ -1,0 +1,22 @@
+.social-share
+    list-style-type: none
+    font-size: 0
+    text-align: center
+    margin: 60px 0 35px
+
+    &__button
+        margin-right: 16px
+        display: inline
+
+        &:last-child
+            margin-right: 0
+
+        &-svg
+            color: $color-blue
+            width: 48px
+            height: 48px
+            cursor: pointer
+            transition: color $animation-time $timing-function
+
+            &:hover
+                color: $color-gray
