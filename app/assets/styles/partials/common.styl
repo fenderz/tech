@@ -12,3 +12,13 @@ html, body
 .page-layout
     overflow: hidden
     padding-top: $header-height
+
+.desktop_hide
+    display: none !important
+
+@media $media-mobile
+    .mobile_hide
+        display: none !important
+
+    .desktop_hide
+        display: block !important
