@@ -1,0 +1,74 @@
+.events
+    white-space: nowrap
+    padding: 20px 10px 0
+    text-align: left
+
+    &__item
+        white-space: normal
+        display: inline-block
+        vertical-align: top
+        width: 31%
+        margin-right: 3.5%
+
+        &:last-child
+            margin: 0
+
+    &__img-link
+        display block
+        margin-bottom: 20px
+
+    &__img
+        display: block
+        max-width: 100%
+        height: auto
+
+    &__row
+        margin-top: 5px
+        font-family: $font-family-lato
+
+    &__date
+        display: inline-block
+        vertical-align: baseline
+        font-size: 20px
+        margin-right: 5px
+
+    &__reg-link
+    &__reg-disabled
+        text-decoration: none
+        display: inline-block
+        vertical-align: baseline
+        font-size: 16px
+
+    &__reg-link
+        color: $color-lime
+        border-bottom: 1px solid transparent
+        transition: border-color $animation-time $timing-function
+
+        &:hover
+            border-color: $color-lime
+
+    &__reg-disabled
+        color: $color-gray
+
+    &__name
+        color: $color-blue
+        text-decoration: none
+        font-size: 22px
+        border-bottom: 1px solid transparent
+        transition: border-color $animation-time $timing-function
+
+        &:hover
+            border-color: $color-blue
+
+@media $media-mobile
+   .events
+       white-space: normal
+       padding: 0 20px
+
+       &__item
+           width: auto
+           margin: 0 0 20px
+           display: block
+
+       &__img-link
+           margin-bottom: 0
