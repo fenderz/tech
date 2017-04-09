@@ -393,6 +393,10 @@ a.button_blue:active {
   width: 100%;
   top: -50px;
 }
+.page-section__cover-container {
+  display: inline-block;
+  vertical-align: middle;
+}
 .page-section_cover {
   height: 400px;
   overflow: hidden;
