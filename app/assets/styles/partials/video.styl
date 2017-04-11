@@ -1,0 +1,79 @@
+.video
+    white-space: nowrap
+    padding: 20px 10px 0
+    text-align: left
+
+    &__item
+        white-space: normal
+        display: inline-block
+        vertical-align: top
+        width: 48%
+        margin-right: 4%
+
+        &:last-child
+            margin: 0
+
+    &__img-link
+        display block
+        margin-bottom: 20px
+        position: relative
+
+        &::before
+            content: ''
+            width: 66px
+            height: 66px
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            background: url($bg-url + 'play-button-icon.svg') no-repeat 0 0
+            background-size: cover
+
+    &__img
+        display: block
+        max-width: 100%
+        height: auto
+
+    &__about
+        position: absolute
+        left: 20px
+        right: @left
+        bottom: 15px
+        padding-right: 60px
+        text-decoration: none
+        color: $color-white
+        font-size: 16px
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+
+    &__time
+        position: absolute
+        right: 0
+
+    &__name
+        color: $color-blue
+        text-decoration: none
+        font-size: 22px
+        border-bottom: 1px solid transparent
+        transition: border-color $animation-time $timing-function
+
+        &:hover
+            border-color: $color-blue
+
+@media $media-mobile
+   .video
+       white-space: normal
+       padding: 0 20px
+
+       &__item
+           width: auto
+           margin: 0 0 20px
+           display: block
+
+       &__img-link
+           margin-bottom: 10px
+
+           &::before
+               width: 40px
+               height: 40px
