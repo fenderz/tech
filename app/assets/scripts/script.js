@@ -1,5 +1,7 @@
 var transformProp = 'WebkitAppearance' in document.documentElement.style ? 'webkitTransform' : 'transform';
 var isMobile = mobileAndTabletcheck();
+var ACTIVE_TAB = 'tabs__nav-item_active';
+var ACTIVE_TAB_CONTENT = 'tabs__content-item_active';
 
 document.addEventListener('DOMContentLoaded', function () {
     var coverNode = document.querySelector('.js-cover-image');
@@ -20,6 +22,27 @@ document.addEventListener('DOMContentLoaded', function () {
             coverNode.style[transformProp] = 'translateY(' + Math.round(pageScrollTop * 0.2) + 'px)';
         }
     });
+
+    // Tabs
+    var tabNodes = Array.prototype.slice.apply(document.querySelectorAll('.js-tab-nav'));
+    var tabContentNodes = Array.prototype.slice.apply(document.querySelectorAll('.js-tab-content'));
+
+    if (tabNodes.length) {
+        tabNodes.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                var currentElementId = this.dataset.tabId;
+
+                tabNodes.forEach(function(tabNode) {
+                    tabNode.classList.toggle(ACTIVE_TAB, tabNode.dataset.tabId === currentElementId);
+                });
+
+                tabContentNodes.forEach(function(tabContentNode) {
+                    tabContentNode.classList.toggle(ACTIVE_TAB_CONTENT, tabContentNode.dataset.tabId === currentElementId);
+                });
+            });
+        });
+    }
+
 });
 
 // Check mobile device

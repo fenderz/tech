@@ -1,26 +1,87 @@
-.fadein-top
-.fadein-bottom
-.fadein-left
-.fadein-right
-    opacity 0
-    transition opacity $animation-time $timing-function, transform $animation-time $timing-function
+.animateTop
+.animateBottom
+.animateLeft
+.animateRight
+.animateHeight
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
 
-.fadein-bottom
-    transform translate(0, 20%)
+.animateTop
+    animation-name: animateTop
 
-.fadein-top
-    transform translate(0, -20%)
+.animateBottom
+    animation-name: animateBottom
 
-.fadein-right
-    transform translate(20%, 0)
+.animateLeft
+    animation-name: animateLeft
 
-.fadein-left
-    transform translate(-20%, 0)
+.animateRight
+    animation-name: animateRight
 
-.slider__item_active
-    .fadein-bottom
-    .fadein-right
-    .fadein-left
-    .fadein-top
-        opacity 1
-        transform translate(0,0)
+.animateFade
+    animation-name: animateFade
+    animation-duration: $animation-time
+    animation-fill-mode: both
+
+@keyframes animateFade {
+
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes animateTop {
+
+    0% {
+        opacity: 0
+        transform: translateY(-40px)
+    }
+
+    100% {
+        opacity: 1
+        transform: translateY(0)
+    }
+}
+
+@keyframes animateBottom {
+
+    0% {
+        opacity: 0
+        transform: translateY(40px)
+    }
+
+    100% {
+        opacity: 1
+        transform: translateY(0)
+    }
+}
+
+@keyframes animateRight {
+
+    0% {
+        opacity: 0
+        transform: translateX(60px)
+    }
+
+    100% {
+        opacity: 1
+        transform: translateX(0)
+    }
+}
+
+@keyframes animateLeft {
+
+    0% {
+        opacity: 0
+        transform: translateX(-60px)
+    }
+
+    100% {
+        opacity: 1
+        transform: translateX(0)
+    }
+}

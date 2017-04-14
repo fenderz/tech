@@ -1,0 +1,40 @@
+.tabs
+    &__nav
+        text-align: center
+        margin-bottom: 40px
+
+        &-item
+            height: 50px
+            box-sizing: border-box
+            padding: 0 20px
+            border: 1px solid transparent
+            border-radius: 3px
+            color: $color-blue
+            font: 400 18px $font-family-lato
+            line-height: @height - 1
+            transition: color $animation-time $timing-function
+            cursor: pointer
+            display: inline-block
+            vertical-align: top
+
+            &:hover
+                color: $color-yellow
+
+            &_active
+                border-color: $color-blue
+                cursor: default
+
+                &:hover
+                    color: $color-blue
+
+    &__content
+        &-item
+            display: none
+            @extend .animateFade
+
+            &_active
+                display: block
+
+@media $media-mobile
+   .tabs
+       display: none
