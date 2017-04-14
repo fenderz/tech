@@ -3,7 +3,7 @@
         section-content()
         position: relative
         text-align: center
-        padding: 50px 85px 70px
+        padding: 50px 10px 70px
 
         &_underline
             border-bottom: 1px solid $color-border-gray
@@ -14,35 +14,35 @@
 
     &__text
         title(3)
+        padding: 0 75px
         color: $color-gray
         margin-bottom: 40px
-
-    //MOD Events block
-    &_events
-        & ^[0]__content
-            padding: 50px 0 70px
 
     //MOD Video block
     &_video
         background: $color-soft-gray
 
-        & ^[0]__content
-            padding: 50px 0 70px
+    //MOD Events block
+    &_vacancies
+        & ^[0]__text
+            padding-left: 20px
+            padding-right: @padding-left
 
 @media $media-tablet
     .page-section
         &__content
-            padding: 30px 50px
+            padding: 30px 30px
 
 @media $media-mobile
     .page-section
         min-width: 300px
 
         &__content
-            padding: 30px 18px
+            padding: 30px 20px
 
         &__title
             margin-bottom: 20px
 
         &__text
             margin-bottom: 40px
+            padding: 0
