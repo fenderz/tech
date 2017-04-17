@@ -33,3 +33,13 @@ section-content()
     margin: 0 auto
     max-width: $grid-hd
     box-sizing: border-box
+
+// Link
+link($color = $color-blue)
+    cursor: pointer
+    color: $color
+    border-bottom: 1px solid transparent
+    transition: border-color $animation-time $timing-function
+
+    &:hover
+        border-color: $color

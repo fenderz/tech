@@ -2,6 +2,8 @@ var transformProp = 'WebkitAppearance' in document.documentElement.style ? 'webk
 var isMobile = mobileAndTabletcheck();
 var ACTIVE_TAB = 'tabs__nav-item_active';
 var ACTIVE_TAB_CONTENT = 'tabs__content-item_active';
+var OPEN_POPUP = 'popup_open';
+var BODY_DISABLED = 'page-body_disabled';
 
 document.addEventListener('DOMContentLoaded', function () {
     var coverNode = document.querySelector('.js-cover-image');
@@ -43,6 +45,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Popup
+    var popupNode = document.querySelector('.js-popup');
+    var popupCloseNode = document.querySelector('.js-popup-close');
+    var popupLinkNodes = Array.prototype.slice.apply(document.querySelectorAll('.js-pop-link'));
+
+    popupLinkNodes.forEach(function(node) {
+        node.addEventListener('click', function() {
+            popupNode.classList.add(OPEN_POPUP);
+            document.body.classList.add(BODY_DISABLED);
+        });
+    });
+
+    popupCloseNode.addEventListener('click', function() {
+        popupNode.classList.remove(OPEN_POPUP);
+        document.body.classList.remove(BODY_DISABLED);
+    });
 });
 
 // Check mobile device

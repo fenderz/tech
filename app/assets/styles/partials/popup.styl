@@ -1,0 +1,104 @@
+.popup
+    position: fixed
+    z-index: 20
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    visibility: hidden
+    white-space: nowrap
+    opacity: 0
+    transition: visibility $animation-time $timing-function, opacity $animation-time $timing-function
+
+    &__scroll
+        overflow-y: auto
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+
+        &::before
+            content: ''
+            height: 100%
+            display: inline-block
+            vertical-align: middle
+
+    &__overlay
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba(#000, .8)
+
+    &__close-button
+        position: absolute
+        right: 20px
+        top: 20px
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        cursor: pointer
+        background: url($bg-url + 'close-icon.svg') no-repeat 50% 50%;
+        background-size: 16px 16px
+        transition: box-shadow $timing-function $animation-time
+
+        &:hover
+            box-shadow: 0 0 2px rgba(#000, .8)
+
+    &__window
+        margin: 5% 0
+        display: inline-block
+        vertical-align: middle
+        background: $color-white
+        box-sizing: border-box
+        width: 800px
+        padding: 50px 80px
+        position: relative
+        z-index: 10
+        white-space: normal
+        text-align: left
+
+    &__content
+        font-family: $font-family-lato
+
+        h2
+            title(2)
+            margin-bottom: 30px
+            text-align: center
+        h3
+
+            title(3, 1.3, $font-family-lato)
+            margin: 15px 0
+        p
+        ul
+            font-size: 18px
+            padding-bottom: 10px
+            font-family: $font-family-lato-light
+
+        li
+            position: relative
+            padding-left: 20px
+            margin-bottom: 5px
+
+            &::before
+                content: '\2014'
+                position: absolute
+                left: 0
+
+    &__link-wrap
+        padding-top: 20px
+        text-align: center
+
+    &__pseudo-link
+        link()
+
+    &_open
+        visibility: visible
+        opacity: 1
+
+@media $media-mobile
+   .popup
+       display: none
