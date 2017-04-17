@@ -18,15 +18,21 @@
         color: $color-gray
         margin-bottom: 40px
 
-    //MOD Video block
+    //MOD Video section
     &_video
         background: $color-soft-gray
 
-    //MOD Events block
+    //MOD Events section
     &_vacancies
         & ^[0]__text
             padding-left: 20px
             padding-right: @padding-left
+
+    //MOD Social share section
+    &_social-share
+        & ^[0]__content
+            padding-top: 20px
+            padding-bottom: @padding-top
 
 @media $media-tablet
     .page-section
