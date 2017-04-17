@@ -747,6 +747,8 @@ a.button_blue:active {
   font-size: 16px;
 }
 .events__reg-link {
+  cursor: pointer;
+  text-decoration: none;
   color: #97cf26;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
@@ -758,11 +760,12 @@ a.button_blue:active {
   color: #858585;
 }
 .events__name {
-  color: #0af;
+  cursor: pointer;
   text-decoration: none;
-  font-size: 22px;
+  color: #0af;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
+  font-size: 22px;
 }
 .events__name:hover {
   border-color: #0af;
@@ -834,11 +837,12 @@ a.button_blue:active {
   right: 0;
 }
 .video__name {
-  color: #0af;
+  cursor: pointer;
   text-decoration: none;
-  font-size: 22px;
+  color: #0af;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
+  font-size: 22px;
 }
 .video__name:hover {
   border-color: #0af;
@@ -1017,6 +1021,7 @@ a.button_blue:active {
 }
 .popup__pseudo-link {
   cursor: pointer;
+  text-decoration: none;
   color: #0af;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
@@ -1089,13 +1094,14 @@ a.button_blue:active {
   padding: 15px 15px 0;
 }
 .footer__text-link {
-  color: #858585;
+  cursor: pointer;
   text-decoration: none;
-  border-bottom: 1px solid #858585;
+  color: #858585;
+  border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
 .footer__text-link:hover {
-  border-color: transparent;
+  border-color: #858585;
 }
 @media screen and (max-width: 580px) {
   .footer__nav {
