@@ -33,6 +33,16 @@ section-content()
     margin: 0 auto
     max-width: $grid-hd
     box-sizing: border-box
+    padding-left: $side-offset-hd
+    padding-right: $side-offset-hd
+
+    @media $media-tablet
+        padding-left: $side-offset-tablet
+        padding-right: $side-offset-tablet
+
+    @media $media-mobile
+        padding-left: $side-offset-mobile
+        padding-right: $side-offset-mobile
 
 // Link
 link($color = $color-blue)
