@@ -1,6 +1,7 @@
 .navigation-list
     display: inline-block
     vertical-align: middle
+    white-space: nowrap
 
     &__item
         display: inline-block
@@ -25,3 +26,21 @@
         &:hover
             color: $color-yellow
 
+@media $media-mobile
+    .navigation-list
+        display: block
+        background: $color-dark
+        padding: 0 $side-offset-mobile
+        white-space: normal
+
+        &__item
+            display: block
+            margin: 0
+            padding: 15px 0
+            border-bottom: 1px solid $color-white
+
+            &_active
+                border-color: $color-yellow
+
+            &:last-child
+                border-bottom: 0

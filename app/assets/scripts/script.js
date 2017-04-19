@@ -4,6 +4,7 @@ var ACTIVE_TAB = 'tabs__nav-item_active';
 var ACTIVE_TAB_CONTENT = 'tabs__content-item_active';
 var OPEN_POPUP = 'popup_open';
 var BODY_DISABLED = 'page-body_disabled';
+var NAV_OPEN = 'header_nav-open';
 
 document.addEventListener('DOMContentLoaded', function () {
     var coverNode = document.querySelector('.js-cover-image');
@@ -61,6 +62,14 @@ document.addEventListener('DOMContentLoaded', function () {
         popupNode.classList.remove(OPEN_POPUP);
         document.body.classList.remove(BODY_DISABLED);
     });
+
+    // Header nav
+    var headerNode = document.querySelector('.js-header');
+    var navBtnNode = document.querySelector('.js-nav-btn');
+    navBtnNode.addEventListener('click', function () {
+        headerNode.classList.toggle(NAV_OPEN);
+    })
+
 });
 
 // Check mobile device
