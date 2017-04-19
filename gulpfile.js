@@ -1,5 +1,6 @@
 const fs = require('fs');
 const gulp = require('gulp');
+const swig = require('gulp-swig');
 const stylus = require('gulp-stylus');
 const concat = require('gulp-concat');
 const nodemon = require('gulp-nodemon');
@@ -46,6 +47,7 @@ gulp.task('imageMin', function() {
 gulp.task('htmlTemplates', ['styles', 'scripts'],  function() {
     return gulp
         .src(templatesPath + '*.html')
+        .pipe(swig({defaults: { cache: false }}))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/'))
 });
