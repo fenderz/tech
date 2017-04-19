@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    - Видеозаписи
+{% endblock %}
+
+{% block content %}
+    {% include 'header.html' with {active: 'video'} only %}
+    <section class="page-section page-section_video">
+        <div class="page-section__content">
+            <h2 class="page-section__title">Видеозаписи</h2>
+            <ul class="video video_inner">
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-1.jpg" alt="Как делать базу данных, так чтобы ее не опрокинули за 5 минут" class="video__img">
+                        <div class="video__about">
+                            Дмитрий Евсеев
+                            <span class="video__time">21:13</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Как делать базу данных, так чтобы ее не опрокинули за 5 минут
+                    </a>
+                </li>
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-2.jpg" alt="Делаем красиво и качественно" class="video__img">
+                        <div class="video__about">
+                            Константин Константинопольский +2
+                            <span class="video__time">93:30</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Делаем красиво и качественно
+                    </a>
+                </li>
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-1.jpg" alt="Как делать базу данных, так чтобы ее не опрокинули за 5 минут" class="video__img">
+                        <div class="video__about">
+                            Дмитрий Евсеев
+                            <span class="video__time">21:13</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Как делать базу данных, так чтобы ее не опрокинули за 5 минут
+                    </a>
+                </li>
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-2.jpg" alt="Делаем красиво и качественно" class="video__img">
+                        <div class="video__about">
+                            Константин Константинопольский +2
+                            <span class="video__time">93:30</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Делаем красиво и качественно
+                    </a>
+                </li>
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-1.jpg" alt="Как делать базу данных, так чтобы ее не опрокинули за 5 минут" class="video__img">
+                        <div class="video__about">
+                            Дмитрий Евсеев
+                            <span class="video__time">21:13</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Как делать базу данных, так чтобы ее не опрокинули за 5 минут
+                    </a>
+                </li>
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-2.jpg" alt="Делаем красиво и качественно" class="video__img">
+                        <div class="video__about">
+                            Константин Константинопольский +2
+                            <span class="video__time">93:30</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Делаем красиво и качественно
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    {% include 'social-share.html' %}
+    {% include 'footer.html' %}
+{% endblock %}

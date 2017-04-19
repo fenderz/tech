@@ -1,17 +1,18 @@
 .events
-    white-space: nowrap
     padding: 20px 0 0
     text-align: left
 
     &__item
-        white-space: normal
         display: inline-block
         vertical-align: top
         width: 31%
         margin-right: 3.5%
 
-        &:last-child
-            margin: 0
+        ^[0]_inner &
+            margin-bottom: 35px
+
+        &:nth-child(3n+3)
+            margin-right: 0
 
     &__img-link
         display block

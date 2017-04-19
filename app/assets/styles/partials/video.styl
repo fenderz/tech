@@ -1,17 +1,18 @@
 .video
-    white-space: nowrap
     padding: 20px 0 0
     text-align: left
 
     &__item
-        white-space: normal
         display: inline-block
         vertical-align: top
         width: 48%
         margin-right: 4%
 
-        &:last-child
-            margin: 0
+        ^[0]_inner &
+            margin-bottom: 40px
+
+        &:nth-child(2n+2)
+            margin-right: 0
 
     &__img-link
         display block

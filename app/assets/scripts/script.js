@@ -7,24 +7,29 @@ var BODY_DISABLED = 'page-body_disabled';
 var NAV_OPEN = 'header_nav-open';
 
 document.addEventListener('DOMContentLoaded', function () {
-    var coverNode = document.querySelector('.js-cover-image');
-    var coverHeight = coverNode.getBoundingClientRect().height;
-    var coverInnerNode = document.querySelector('.js-cover-container');
 
     // Parallax effect
-    window.addEventListener('scroll', function () {
-        if (isMobile) {
-            return;
-        }
+    var coverNode = document.querySelector('.js-cover-image');
 
-        var pageScrollTop = window.pageYOffset;
+    if (coverNode) {
+        var coverHeight = coverNode.getBoundingClientRect().height;
+        var coverInnerNode = document.querySelector('.js-cover-container');
 
-        if (pageScrollTop <= coverHeight) {
-            coverInnerNode.style.opacity = (coverHeight - pageScrollTop) / coverHeight;
-            coverInnerNode.style[transformProp] = 'translateY(-' + Math.round(pageScrollTop * 0.1) + 'px)';
-            coverNode.style[transformProp] = 'translateY(' + Math.round(pageScrollTop * 0.2) + 'px)';
-        }
-    });
+
+        window.addEventListener('scroll', function () {
+            if (isMobile) {
+                return;
+            }
+
+            var pageScrollTop = window.pageYOffset;
+
+            if (pageScrollTop <= coverHeight) {
+                coverInnerNode.style.opacity = (coverHeight - pageScrollTop) / coverHeight;
+                coverInnerNode.style[transformProp] = 'translateY(-' + Math.round(pageScrollTop * 0.1) + 'px)';
+                coverNode.style[transformProp] = 'translateY(' + Math.round(pageScrollTop * 0.2) + 'px)';
+            }
+        });
+    }
 
     // Tabs
     var tabNodes = Array.prototype.slice.apply(document.querySelectorAll('.js-tab-nav'));
@@ -51,12 +56,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var popupCloseNode = document.querySelector('.js-popup-close');
     var popupLinkNodes = Array.prototype.slice.apply(document.querySelectorAll('.js-pop-link'));
 
-    popupLinkNodes.forEach(function(node) {
-        node.addEventListener('click', function() {
-            popupNode.classList.add(OPEN_POPUP);
-            document.body.classList.add(BODY_DISABLED);
+    if(popupLinkNodes.length) {
+        popupLinkNodes.forEach(function(node) {
+            node.addEventListener('click', function() {
+                popupNode.classList.add(OPEN_POPUP);
+                document.body.classList.add(BODY_DISABLED);
+            });
         });
-    });
+    }
 
     popupCloseNode.addEventListener('click', function() {
         popupNode.classList.remove(OPEN_POPUP);

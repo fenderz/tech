@@ -1,418 +1,182 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <title>Avito Tech</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.6, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="description" content="Avito Tech">
-    <meta name="Keywords" content="Avito Tech">
-    <link rel="icon" sizes="192x192" href="" type="image/png">
-    <link rel="apple-touch-startup-image" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="152x152" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="144x144" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="120x120" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="114x114" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="76x76" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="72x72" href="" type="image/png">
-    <link rel="apple-touch-icon" sizes="57x57" href="" type="image/png">
-    <link rel="apple-touch-icon" href="" type="image/png">
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" media="all">
-    <link rel="stylesheet" href="/styles/style.bundle.min.css">
-</head>
-<body class="page-body">
-    <div class="page-layout">
-        <header class="js-header header">
-            <div class="header__content">
-                <a href="/" class="header__logo-link">
-                    <img class="header__logo" src="/img/avito-tech-logo.svg" width="169" height="30" alt="Avito Tech">
-                </a>
-                <div class="js-nav-btn header__nav-btn"></div>
-                <nav class="header__nav">
-                    <ul class="navigation-list">
-                        <li class="navigation-list__item navigation-list__item_active">
-                            <a href="#" class="navigation-list__link">
-                                События
-                            </a>
-                        </li>
-                        <li class="navigation-list__item">
-                            <a href="#" class="navigation-list__link">
-                                Видео
-                            </a>
-                        </li>
-                        <li class="navigation-list__item">
-                            <a href="#" class="navigation-list__link">
-                                Публикации
-                            </a>
-                        </li>
-                        <li class="navigation-list__item">
-                            <a href="#" class="navigation-list__link">
-                                Open Source
-                            </a>
-                        </li>
-                        <li class="navigation-list__item">
-                            <a href="#" class="navigation-list__link">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="navigation-list__item">
-                            <a href="#" class="navigation-list__link">
-                                Вакансии
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="cover-section cover-section_cover">
-            <div class="cover-section__cover js-cover-image"></div>
-            <div class="cover-section__content">
-                <div class="js-cover-container cover-section__cover-container">
-                    <h1 class="cover-section__title">Мы фигачим офигенный код</h1>
-                </div>
-            </div>
-        </section>
-        <section class="page-section">
-            <div class="page-section__content page-section__content_underline">
-                <h2 class="page-section__title">Что такое AvitoTech</h2>
-                <p class="page-section__text">
-                    В 2007 году в Рунете появилась всем известная торговая площадка. Она называется Avito. Каждый может предложить или найти здесь товар или услугу. За время своего существования сайт неоднократно менялся, становясь ещё лучше. И количество посетителей только подтверждает это.
-                </p>
-                <a class="button button_blue">
-                    Узнать он нас прямо сейчас
-                </a>
-            </div>
-        </section>
-        <section class="page-section page-section_events">
-            <div class="page-section__content">
-                <h2 class="page-section__title">Мероприятия</h2>
-                <ul class="events">
-                    <li class="events__item">
-                        <a href="#" class="events__img-link">
-                            <img src="/img/events-img-1.jpg" alt="PGHack 2017" class="events__img">
-                        </a>
-                        <div class="events__row">
-                            <span class="events__date">23 мая</span>
-                            <a href="#" class="events__reg-link">Регистрация открыта</a>
-                        </div>
-                        <div class="events__row">
-                            <a href="#" class="events__name">PGHack 2017</a>
-                        </div>
-                    </li>
-                    <li class="events__item">
-                        <a href="#" class="events__img-link">
-                            <img src="img/events-img-2.jpg" alt="Hackathon" class="events__img">
-                        </a>
-                        <div class="events__row">
-                            <span class="events__date">11 апреля</span>
-                            <a href="#" class="events__reg-link">Регистрация открыта</a>
-                        </div>
-                        <div class="events__row">
-                            <a href="#" class="events__name">Hackathon</a>
-                        </div>
-                    </li>
-                    <li class="events__item">
-                        <a href="#" class="events__img-link">
-                            <img src="img/events-img-3.jpg" alt="iOs developers conference in Avito office" class="events__img">
-                        </a>
-                        <div class="events__row">
-                            <span class="events__date">23 сентября</span>
-                            <span class="events__reg-disabled">Регистрация закрыта</span>
-                        </div>
-                        <div class="events__row">
-                            <a href="#" class="events__name">iOs developers conference in Avito office</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="page-section page-section_video">
-            <div class="page-section__content">
-                <h2 class="page-section__title">Видеозаписи</h2>
-                <ul class="video">
-                    <li class="video__item">
-                        <a href="#" class="video__img-link">
-                            <img src="img/video-img-1.jpg" alt="Как делать базу данных, так чтобы ее не опрокинули за 5 минут" class="video__img">
-                            <div class="video__about">
-                                Дмитрий Евсеев
-                                <span class="video__time">21:13</span>
-                            </div>
-                        </a>
-                        <a class="video__name" href="#">
-                            Как делать базу данных, так чтобы ее не опрокинули за 5 минут
-                        </a>
-                    </li>
-                    <li class="video__item">
-                        <a href="#" class="video__img-link">
-                            <img src="img/video-img-2.jpg" alt="Делаем красиво и качественно" class="video__img">
-                            <div class="video__about">
-                                Константин Константинопольский +2
-                                <span class="video__time">93:30</span>
-                            </div>
-                        </a>
-                        <a class="video__name" href="#">
-                            Делаем красиво и качественно
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="page-section page-section_vacancies">
-            <div class="page-section__content">
-                <h2 class="page-section__title">Вакансии</h2>
-                <p class="page-section__text">
-                    Мы всегда ищем новые таланты. Если среди открытых вакансий вы не нашли подходящую<br>
-                    — пишите на hr@avito.ru. Возможно, именно вас нам и не хватает.
-                </p>
-                <div class="tabs">
-                    <ul class="tabs__nav">
-                        <li class="js-tab-nav tabs__nav-item tabs__nav-item_active" data-tab-id="1">
-                            Москва
-                        </li>
-                        <li class="js-tab-nav tabs__nav-item"  data-tab-id="2">
-                            Санкт-Петербург
-                        </li>
-                    </ul>
-                    <ul class="tabs__content">
-                        <li class="js-tab-content tabs__content-item tabs__content-item_active" data-tab-id="1">
-                            <div class="vacancies">
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Финансовый отдел
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Head of consolidation
-                                        </li>
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Treasury manager
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Юридический отдел
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Юрист (корпоративное право)
-                                        </li>
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Руководитель договорного отдела
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Отдел информационного и документационного сопровождения
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Специалист по обработке документации (временный проект)
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Отдел PR
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Главный редактор
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Бухгалтерия
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Бухгалтер (расходы)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="js-tab-content tabs__content-item" data-tab-id="2">
-                            <div class="vacancies">
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Финансовый отдел
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Head of consolidation
-                                        </li>
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Head of consolidation
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="vacancies__row">
-                                    <div class="vacancies__department">
-                                        Финансовый отдел
-                                    </div>
-                                    <ul class="vacancies__list">
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Head of consolidation
-                                        </li>
-                                        <li class="vacancies__list-item js-pop-link">
-                                            Head of consolidation
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="page-section page-section_social-share">
-            <div class="page-section__content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute"><symbol viewBox="0 0 48 47" id="icon-social-facebook"><title>facebook</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/><path d="M24.782 32.473v-8.546H28.2l.855-3.418h-4.273v-2.565c0-.47.383-.854.854-.854h3.42v-3.417h-3.42a4.273 4.273 0 0 0-4.272 4.272v2.564h-3.42v3.417h3.42v8.546h3.418"fill="currentColor"/></g></symbol><symbol viewBox="0 0 48 47" id="icon-social-instagram"><title>instagram</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/><path d="M29.175 14.527h-10.49a3.308 3.308 0 0 0-3.303 3.304v10.49a3.308 3.308 0 0 0 3.304 3.305h10.49a3.308 3.308 0 0 0 3.304-3.305V17.83a3.308 3.308 0 0 0-3.305-3.303zm.95 1.97h.376v2.898l-2.888.01-.01-2.9 2.522-.007zm-8.634 4.824a3.005 3.005 0 0 1 2.44-1.254c1.005 0 1.894.497 2.44 1.255.358.496.57 1.1.57 1.756 0 1.66-1.35 3.01-3.01 3.01-1.66 0-3.008-1.35-3.008-3.01 0-.655.213-1.26.57-1.755zm9.323 7a1.64 1.64 0 0 1-1.638 1.64h-10.49a1.64 1.64 0 0 1-1.638-1.64v-7H19.6a4.653 4.653 0 0 0-.345 1.756 4.68 4.68 0 0 0 4.676 4.675 4.68 4.68 0 0 0 4.676-4.674c0-.62-.125-1.212-.345-1.755h2.553v7z"fill="currentColor"/></g></symbol><symbol viewBox="0 0 48 47" id="icon-social-twitter"><title>twitter</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/><path d="M31.488 17.853a3.953 3.953 0 0 0 1.734-2.182 7.892 7.892 0 0 1-2.505.958 3.945 3.945 0 0 0-6.722 3.598 11.197 11.197 0 0 1-8.13-4.122 3.943 3.943 0 0 0 1.22 5.267 3.935 3.935 0 0 1-1.785-.494v.05c0 1.91 1.36 3.505 3.163 3.868a3.965 3.965 0 0 1-1.78.067 3.947 3.947 0 0 0 3.684 2.74 7.91 7.91 0 0 1-5.84 1.633 11.163 11.163 0 0 0 6.047 1.772c7.255 0 11.223-6.01 11.223-11.223 0-.17-.004-.34-.01-.51a8.012 8.012 0 0 0 1.967-2.042 7.9 7.9 0 0 1-2.266.62z"fill="currentColor"/></g></symbol><symbol viewBox="0 0 48 47" id="icon-social-vkontakte"><title>vk</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><path d="M17.977 15.382h7.49c2.463 0 4.56 1.173 4.56 3.547-.003 1.98-.74 2.752-2.257 3.623.13.104.998.356 1.29.496.467.223.743.45 1.05.753.86.85 1.02 1.627 1.02 2.96 0 3.097-3.078 4.652-6.043 4.652h-7.142l.032-16.033zm4.07 4.212v2.082c1.928 0 3.74.247 3.74-1.786 0-1.883-2.05-1.572-3.743-1.572l.002 1.276zm-.002 8.87c2.114 0 4.725.338 4.77-1.995.05-2.434-2.68-1.995-4.768-1.995l-.002 3.99z"fill="currentColor"/><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/></g></symbol><symbol viewBox="0 0 48 47" id="icon-social-vkontakte"><title>vk</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><path d="M17.977 15.382h7.49c2.463 0 4.56 1.173 4.56 3.547-.003 1.98-.74 2.752-2.257 3.623.13.104.998.356 1.29.496.467.223.743.45 1.05.753.86.85 1.02 1.627 1.02 2.96 0 3.097-3.078 4.652-6.043 4.652h-7.142l.032-16.033zm4.07 4.212v2.082c1.928 0 3.74.247 3.74-1.786 0-1.883-2.05-1.572-3.743-1.572l.002 1.276zm-.002 8.87c2.114 0 4.725.338 4.77-1.995.05-2.434-2.68-1.995-4.768-1.995l-.002 3.99z"fill="currentColor"/><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/></g></symbol><symbol viewBox="0 0 48 47" id="icon-social-ok"><title>ok</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><path d="M24.026 16.587c1.16 0 2.103.924 2.103 2.059 0 1.134-.943 2.058-2.103 2.058-1.158 0-2.102-.924-2.102-2.058 0-1.135.944-2.059 2.102-2.059m5.078 2.059c0 2.741-2.277 4.971-5.078 4.971-2.8 0-5.078-2.23-5.078-4.971 0-2.742 2.277-4.973 5.078-4.973s5.078 2.23 5.078 4.973zm-.074 7.832a9.63 9.63 0 0 1-2.95 1.196l2.84 2.78a1.436 1.436 0 0 1 0 2.06 1.51 1.51 0 0 1-2.103 0l-2.791-2.732-2.789 2.732a1.504 1.504 0 0 1-1.053.426c-.38 0-.76-.142-1.052-.426a1.436 1.436 0 0 1 0-2.06l2.839-2.78a9.652 9.652 0 0 1-2.949-1.196 1.438 1.438 0 0 1-.465-2.01 1.505 1.505 0 0 1 2.05-.458 6.563 6.563 0 0 0 6.837 0 1.506 1.506 0 0 1 2.052.459c.438.68.229 1.58-.466 2.009z"fill="currentColor"/><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/></g></symbol><symbol viewBox="0 0 48 47" id="icon-social-mail"><title>mail</title><g transform="translate(.5)" fill="none" fill-rule="evenodd"><path d="M23.652 17.369a6.9 6.9 0 0 1 4.758 1.978v.005a.943.943 0 0 1 .26-.712.985.985 0 0 1 .706-.305h.142c.284.001.555.113.754.311.199.199.308.467.304.744v9.01c-.04.251.087.5.318.617.23.117.512.076.698-.101 1.5-1.487 3.294-7.643-.932-11.208-3.383-2.832-8.247-3.2-12.034-.911-3.422 2.365-4.689 6.75-3.038 10.52 2.024 4.507 7.817 5.852 11.26 4.51 1.744-.673 2.55 1.596.739 2.338-2.736 1.124-10.351 1.012-13.909-4.933a10.589 10.589 0 0 1-1.073-8.2c.77-2.765 2.63-5.116 5.172-6.536 4.913-2.806 11.138-2.035 15.183 1.881 4.053 4.084 3.816 11.73-.137 14.702-1.79 1.348-4.45.036-4.433-1.932l-.018-.643a6.777 6.777 0 0 1-4.715 1.89c-3.64-.068-6.59-2.914-6.712-6.478.104-3.582 3.053-6.459 6.712-6.547h-.005zm4.496 6.298a4.103 4.103 0 0 0-1.344-2.929 4.282 4.282 0 0 0-3.077-1.108h-.086c-2.706 0-4.207 2.053-4.207 4.382a3.95 3.95 0 0 0 1.135 3.04 4.127 4.127 0 0 0 3.06 1.22c2.4.082 4.417-1.744 4.523-4.091l-.004-.514z" fill="currentColor"/><ellipse stroke="currentColor" cx="23.5" cy="23.5" rx="23" ry="23"/></g></symbol></svg>
-                <ul class="social-share">
-                    <li class="social-share__button">
-                        <a href="https://www.facebook.com/avito.ru" target="_blank" title="Авито в Facebook" rel="nofollow">
-                            <svg class="social-share__button-svg facebook">
-                                <use xlink:href="#icon-social-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-share__button">
-                        <a href="https://twitter.com/avito_ru" target="_blank" title="Авито в Twitter" rel="nofollow">
-                            <svg class="social-share__button-svg">
-                                <use xlink:href="#icon-social-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-share__button">
-                        <a href="http://vk.com/club5755934" target="_blank" title="Клуб Авито ВКонтакте" rel="nofollow">
-                            <svg class="social-share__button-svg">
-                                <use xlink:href="#icon-social-vkontakte"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-share__button">
-                        <a href="http://instagram.com/avitoru" target="_blank" title="Авито в Instagram" rel="nofollow">
-                            <svg class="social-share__button-svg">
-                                <use xlink:href="#icon-social-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer__content">
-                <ul class="footer__nav">
-                    <li class="footer__nav-item mobile_hide">
-                        <a class="footer__nav-link" href="//www.avito.ru/additem" title="Подать объявление">Подать объявление</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item mobile_hide">
-                        <a class="footer__nav-link" href="//www.avito.ru/rossiya/">Объявления</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item mobile_hide">
-                        <a class="footer__nav-link" href="//www.avito.ru/shops">Магазины</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="//support.avito.ru/hc/ru">Помощь</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="//www.avito.ru/safety">Безопасность</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="//www.avito.ru/info/reklama_na_saite" rel="nofollow">Реклама на сайте</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="//www.avito.ru/company">О компании</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="//www.avito.ru/company/job">Вакансии</a>
-                    </li>
-                    &nbsp;
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="//www.avito.ru/info/apps"><strong>Мобильное приложение</strong></a>
-                    </li>
-                    <li class="footer__nav-item footer__nav-item_helper mobile_hide"></li>
-                </ul>
-                <p class="footer__text">
-                    ©&nbsp;Avito&nbsp;—&nbsp;сайт объявлений.
-                    Использование сайта, в том числе подача объявлений, означает согласие с
-                    <a class="footer__text-link" href="//www.avito.ru/info/polzovatelskoe_soglashenie">пользовательским соглашением</a>.
-                    <br><span class="mobile_hide"></span>Оплачивая услуги на сайте, вы принимаете <a class="footer__text-link" href="//www.avito.ru/info/oferta">оферту</a>.
-                    <a class="footer__text-link" href="//www.avito.ru/help/tech_browser">Информация&nbsp;о&nbsp;cookies</a>.
-                </p>
-            </div>
-        </footer>
-    </div>
+{% extends 'layout.html' %}
 
-    <div class="js-popup popup">
-        <div class="popup__overlay"></div>
-        <div class="popup__scroll">
-            <div class="popup__window">
-                <span class="js-popup-close popup__close-button"></span>
-                <div class="popup__content">
-                    <h2>Главный редактор</h2>
-                    <h3>Мы ожидаем, что вы:</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dicta dolor dolorem enim facilis iure maiores quas saepe suscipit voluptates. Dolor quia saepe totam ullam veniam! Deserunt illum repellendus soluta.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dicta dolor dolorem enim facilis iure maiores quas saepe suscipit voluptates. Dolor quia saepe totam ullam veniam! Deserunt illum repellendus soluta.</p>
-                    <h3>Мы ожидаем, что вы:</h3>
-                    <ul>
-                        <li>обладаете опытом не менее 2 лет на аналогичной позиции;</li>
-                        <li>обязательно знаете английский язык;</li>
-                        <li>имеете высшее образование (филология, журналистика — будет плюсом);</li>
-                        <li>креативны, способны генерировать идеи, умеете писать тексты;</li>
-                        <li>знаете интернет-аудиторию, интернет-технологии;</li>
-                        <li>внимательны к деталям, ответственны, позитивно настроены в жизни.</li>
-                    </ul>
-                    <h3>Вам предстоит:</h3>
-                    <ul>
-                        <li>участие в разработке контент-стратегии;</li>
-                        <li>контроль контента (сайт, SMM, liR публикации и т. д.), обеспечение высокого качества материалов;</li>
-                        <li>контроль обновления контента на сайте;</li>
-                        <li>написание или рерайтинг текстов, разработка креативных идей;</li>
-                        <li>взаимодействие с подрядчиками.</li>
-                    </ul>
-                    <h3>Мы предлагаем вам:</h3>
-                    <ul>
-                        <li>заработную плату по результатам собеседования;</li>
-                        <li>медицинское страхование после испытательного срока;</li>
-                        <li>питание в офисе, свой спортзал, занятия йогой;</li>
-                        <li>работу в офисе А класса м. Белорусская.</li>
-                    </ul>
-                    <h3>Вам предстоит:</h3>
-                    <ul>
-                        <li>участие в разработке контент-стратегии;</li>
-                        <li>контроль контента (сайт, SMM, liR публикации и т. д.), обеспечение высокого качества материалов;</li>
-                        <li>контроль обновления контента на сайте;</li>
-                        <li>написание или рерайтинг текстов, разработка креативных идей;</li>
-                        <li>взаимодействие с подрядчиками.</li>
-                    </ul>
-                    <h3>Мы предлагаем вам:</h3>
-                    <ul>
-                        <li>заработную плату по результатам собеседования;</li>
-                        <li>медицинское страхование после испытательного срока;</li>
-                        <li>питание в офисе, свой спортзал, занятия йогой;</li>
-                        <li>работу в офисе А класса м. Белорусская.</li>
-                    </ul>
-                    <p class="popup__link-wrap">
-                        <span class="popup__pseudo-link">Откликнуться на вакансию</span>
-                    </p>
-                </div>
+{% block content %}
+    {% include 'header.html' %}
+    <section class="cover-section cover-section_cover">
+        <div class="cover-section__cover js-cover-image"></div>
+        <div class="cover-section__content">
+            <div class="js-cover-container cover-section__cover-container">
+                <h1 class="cover-section__title">Мы фигачим офигенный код</h1>
             </div>
         </div>
-    </div>
-    <script src="/scripts/bundle.min.js"></script>
-</body>
-</html>
+    </section>
+    <section class="page-section">
+        <div class="page-section__content page-section__content_underline">
+            <h2 class="page-section__title">Что такое AvitoTech</h2>
+            <p class="page-section__text">
+                В 2007 году в Рунете появилась всем известная торговая площадка. Она называется Avito. Каждый может предложить или найти здесь товар или услугу. За время своего существования сайт неоднократно менялся, становясь ещё лучше. И количество посетителей только подтверждает это.
+            </p>
+            <a class="button button_blue">
+                Узнать он нас прямо сейчас
+            </a>
+        </div>
+    </section>
+    <section class="page-section page-section_events">
+        <div class="page-section__content">
+            <h2 class="page-section__title">Мероприятия</h2>
+            <ul class="events">
+                <li class="events__item">
+                    <a href="#" class="events__img-link">
+                        <img src="/img/events-img-1.jpg" alt="PGHack 2017" class="events__img">
+                    </a>
+                    <div class="events__row">
+                        <span class="events__date">23 мая</span>
+                        <a href="#" class="events__reg-link">Регистрация открыта</a>
+                    </div>
+                    <div class="events__row">
+                        <a href="#" class="events__name">PGHack 2017</a>
+                    </div>
+                </li>
+                <li class="events__item">
+                    <a href="#" class="events__img-link">
+                        <img src="img/events-img-2.jpg" alt="Hackathon" class="events__img">
+                    </a>
+                    <div class="events__row">
+                        <span class="events__date">11 апреля</span>
+                        <a href="#" class="events__reg-link">Регистрация открыта</a>
+                    </div>
+                    <div class="events__row">
+                        <a href="#" class="events__name">Hackathon</a>
+                    </div>
+                </li>
+                <li class="events__item">
+                    <a href="#" class="events__img-link">
+                        <img src="img/events-img-3.jpg" alt="iOs developers conference in Avito office" class="events__img">
+                    </a>
+                    <div class="events__row">
+                        <span class="events__date">23 сентября</span>
+                        <span class="events__reg-disabled">Регистрация закрыта</span>
+                    </div>
+                    <div class="events__row">
+                        <a href="#" class="events__name">iOs developers conference in Avito office</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page-section page-section_video">
+        <div class="page-section__content">
+            <h2 class="page-section__title">Видеозаписи</h2>
+            <ul class="video">
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-1.jpg" alt="Как делать базу данных, так чтобы ее не опрокинули за 5 минут" class="video__img">
+                        <div class="video__about">
+                            Дмитрий Евсеев
+                            <span class="video__time">21:13</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Как делать базу данных, так чтобы ее не опрокинули за 5 минут
+                    </a>
+                </li>
+                <li class="video__item">
+                    <a href="#" class="video__img-link">
+                        <img src="img/video-img-2.jpg" alt="Делаем красиво и качественно" class="video__img">
+                        <div class="video__about">
+                            Константин Константинопольский +2
+                            <span class="video__time">93:30</span>
+                        </div>
+                    </a>
+                    <a class="video__name" href="#">
+                        Делаем красиво и качественно
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page-section page-section_vacancies">
+        <div class="page-section__content">
+            <h2 class="page-section__title">Вакансии</h2>
+            <p class="page-section__text">
+                Мы всегда ищем новые таланты. Если среди открытых вакансий вы не нашли подходящую<br>
+                — пишите на hr@avito.ru. Возможно, именно вас нам и не хватает.
+            </p>
+            <div class="tabs">
+                <ul class="tabs__nav">
+                    <li class="js-tab-nav tabs__nav-item tabs__nav-item_active" data-tab-id="1">
+                        Москва
+                    </li>
+                    <li class="js-tab-nav tabs__nav-item" data-tab-id="2">
+                        Санкт-Петербург
+                    </li>
+                </ul>
+                <ul class="tabs__content">
+                    <li class="js-tab-content tabs__content-item tabs__content-item_active" data-tab-id="1">
+                        <div class="vacancies">
+                            <div class="vacancies__row">
+                                <div class="vacancies__department">
+                                    Финансовый отдел
+                                </div>
+                                <ul class="vacancies__list">
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Head of consolidation
+                                    </li>
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Treasury manager
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__row">
+                                <div class="vacancies__department">
+                                    Финансовый отдел
+                                </div>
+                                <ul class="vacancies__list">
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Head of consolidation
+                                    </li>
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Treasury manager
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacancies__row">
+                                <div class="vacancies__department">
+                                    Финансовый отдел
+                                </div>
+                                <ul class="vacancies__list">
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Head of consolidation
+                                    </li>
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Treasury manager
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="js-tab-content tabs__content-item" data-tab-id="2">
+                        <div class="vacancies">
+                            <div class="vacancies__row">
+                                <div class="vacancies__department">
+                                    Финансовый отдел
+                                </div>
+                                <ul class="vacancies__list">
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Head of consolidation
+                                    </li>
+                                    <li class="vacancies__list-item js-pop-link">
+                                        Treasury manager
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {% include 'social-share.html' %}
+    {% include 'footer.html' %}
+{% endblock %}
