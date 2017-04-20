@@ -9,7 +9,7 @@
     visibility: hidden
     white-space: nowrap
     opacity: 0
-    transition: visibility $animation-time $timing-function, opacity $animation-time $timing-function
+    transition: visibility $animation-time $timing-function, opacity $animation-time $timing-function, transform $animation-time $timing-function
 
     &__scroll
         overflow-y: auto
@@ -46,7 +46,7 @@
         transition: box-shadow $timing-function $animation-time
 
         &:hover
-            box-shadow: 0 0 2px rgba(#000, .8)
+            box-shadow: 0 0 2px rgba(#000, .5)
 
     &__window
         margin: 5% 0
@@ -101,4 +101,26 @@
 
 @media $media-mobile
    .popup
-       display: none
+       display: block
+       transform: scale(0)
+
+       &__overlay
+           display: none
+
+       &__scroll
+           &::before
+               display: none
+
+       &__close-button
+           position: fixed
+           right: 10px
+           top: 10px
+
+       &__window
+           display: block
+           width: auto
+           margin: 0
+           padding: 40px 30px 40px 20px
+
+       &_open
+           transform: scale(1)
