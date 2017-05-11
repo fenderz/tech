@@ -64,6 +64,8 @@
     &__content
         font-family: $font-family-lato
 
+    &__vacancies
+
         h2
             title(2)
             margin-bottom: 30px
@@ -90,10 +92,24 @@
 
     &__link-wrap
         padding-top: 20px
+        margin-bottom: 20px
         text-align: center
+
+    &__form-wrap
+        overflow: hidden
+        max-height: 0
+        opacity: 0
+        visibility: hidden
+        transition: visibility $animation-time $timing-function, opacity $animation-time $timing-function, max-height $animation-time $timing-function
+
+        &_open
+            max-height: 1000px
+            opacity: 1
+            visibility: visible
 
     &__pseudo-link
         link()
+        font-size: 18px
 
     &_open
         visibility: visible

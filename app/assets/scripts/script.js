@@ -5,6 +5,7 @@ var ACTIVE_TAB_CONTENT = 'tabs__content-item_active';
 var OPEN_POPUP = 'popup_open';
 var BODY_DISABLED = 'page-body_disabled';
 var NAV_OPEN = 'header_nav-open';
+var FORM_OPEN = 'popup__form-wrap_open';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -75,7 +76,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var navBtnNode = document.querySelector('.js-nav-btn');
     navBtnNode.addEventListener('click', function () {
         headerNode.classList.toggle(NAV_OPEN);
-    })
+    });
+
+    // Form link
+    var formLinkNode = document.querySelector('.js-form-link');
+    var formNode = document.querySelector('.js-form-wrap');
+    formLinkNode.addEventListener('click', function () {
+        formNode.classList.toggle(FORM_OPEN);
+    });
 
 });
 
