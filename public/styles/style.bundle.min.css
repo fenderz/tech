@@ -1223,6 +1223,12 @@ a.button_blue:active {
   resize: vertical;
   min-height: 180px;
 }
+@media screen and (max-width: 580px) {
+  .form {
+    padding: 10px 0;
+    border: none;
+  }
+}
 .checkbox {
   border-radius: 5px;
   border: 1px solid #e8e8e8;
