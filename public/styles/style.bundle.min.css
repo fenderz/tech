@@ -763,6 +763,9 @@ a.button_blue:active {
     font-family: 'latobold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
 }
+.page-section__title_left {
+  text-align: left;
+}
 .page-section__text {
   font-weight: 400;
   font-size: 22px;
@@ -1068,7 +1071,6 @@ a.button_blue:active {
   margin: 5% 0;
   display: inline-block;
   vertical-align: middle;
-  background: #fff;
   box-sizing: border-box;
   width: 800px;
   padding: 50px 80px;
@@ -1079,6 +1081,10 @@ a.button_blue:active {
 }
 .popup__content {
   font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.popup__content iframe {
+  width: 640px;
+  height: 360px;
 }
 .popup__vacancies h2 {
   font-weight: 400;
