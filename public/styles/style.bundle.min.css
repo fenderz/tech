@@ -768,10 +768,10 @@ a.button_blue:active {
 }
 .page-section__text {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.5;
   font-family: 'latolight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  padding: 0 75px;
+  padding: 0 110px;
   color: #858585;
   margin-bottom: 40px;
 }
@@ -876,6 +876,7 @@ a.button_blue:active {
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
   font-size: 22px;
+  font-family: 'latoblack', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 .events__name:hover {
   border-color: #0af;
@@ -954,6 +955,7 @@ a.button_blue:active {
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
   font-size: 22px;
+  font-family: 'latoblack', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 .video__name:hover {
   border-color: #0af;
@@ -1102,8 +1104,8 @@ a.button_blue:active {
 }
 .popup__vacancies h3 {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.5;
   font-family: 'latolight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   margin: 15px 0;
 }
