@@ -770,15 +770,14 @@ a.button_blue:active {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  font-family: 'latolight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   padding: 0 110px;
-  color: #858585;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 580px) {
   .page-section__text {
     font-size: 20px;
-    font-family: 'latolight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
 }
 .page-section_video {
