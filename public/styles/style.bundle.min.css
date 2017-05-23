@@ -936,12 +936,13 @@ a.button_blue:active {
 }
 .video__about {
   position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 15px;
-  padding-right: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3% 60px 3% 3%;
   text-decoration: none;
   color: #fff;
+  background: #000;
   font-size: 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -949,7 +950,7 @@ a.button_blue:active {
 }
 .video__time {
   position: absolute;
-  right: 0;
+  right: 3%;
 }
 .video__name {
   cursor: pointer;
