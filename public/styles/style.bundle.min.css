@@ -925,6 +925,11 @@ a.button_blue:active {
   transform: translate(-50%, -50%);
   background: url("/img/play-button-icon.svg") no-repeat 0 0;
   background-size: cover;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.video__img-link:hover::before {
+  width: 70px;
+  height: 70px;
 }
 .video__img {
   display: block;
