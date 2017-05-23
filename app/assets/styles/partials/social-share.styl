@@ -2,7 +2,6 @@
     list-style-type: none
     font-size: 0
     text-align: center
-    margin: 35px 0
 
     &__button
         margin-right: 16px
@@ -13,19 +12,9 @@
 
         &-svg
             color: $color-blue
-            width: 48px
-            height: 48px
+            width: 55px
+            height: 55px
             cursor: pointer
-            transition: color $animation-time $timing-function
 
             &:hover
-                color: $color-gray
-
-    &_cover
-        & ^[0]__button-svg
-            color: $color-white
-            transition: transform $animation-time $timing-function
-
-            &:hover
-                transform: scale(1.15)
-
+                color: $color-red

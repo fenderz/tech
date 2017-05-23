@@ -7,36 +7,6 @@
         <div class="cover-section__content">
             <div class="js-cover-container cover-section__cover-container">
                 <h1 class="cover-section__title">Мы фигачим офигенный код</h1>
-                <ul class="social-share social-share_cover">
-                    <li class="social-share__button">
-                        <a href="https://www.facebook.com/AvitoTech/" target="_blank" title="Авито в Facebook" rel="nofollow">
-                            <svg class="social-share__button-svg facebook">
-                                <use xlink:href="#icon-social-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-share__button">
-                        <a href="https://twitter.com/AvitoTech" target="_blank" title="Авито в Twitter" rel="nofollow">
-                            <svg class="social-share__button-svg">
-                                <use xlink:href="#icon-social-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-share__button">
-                        <a href="http://vk.com/club5755934" target="_blank" title="Клуб Авито ВКонтакте" rel="nofollow">
-                            <svg class="social-share__button-svg">
-                                <use xlink:href="#icon-social-vkontakte"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-share__button">
-                        <a href="http://instagram.com/avitoru" target="_blank" title="Авито в Instagram" rel="nofollow">
-                            <svg class="social-share__button-svg">
-                                <use xlink:href="#icon-social-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
@@ -46,6 +16,7 @@
             <p class="page-section__text">
                 В 2007 году в Рунете появилась всем известная торговая площадка. Она называется Avito. Каждый может предложить или найти здесь товар или услугу. За время своего существования сайт неоднократно менялся, становясь ещё лучше. И количество посетителей только подтверждает это.
             </p>
+            {% include 'social-share.html' %}
         </div>
     </section>
     <section class="page-section page-section_events">
@@ -58,7 +29,7 @@
                     </a>
                     <div class="events__row">
                         <span class="events__date">23 мая</span>
-                        <a href="#" class="events__reg-link">Регистрация открыта</a>
+                        <span class="events__reg-label">Регистрация открыта</span>
                     </div>
                     <div class="events__row">
                         <a href="#" class="events__name">PGHack 2017</a>
@@ -70,7 +41,7 @@
                     </a>
                     <div class="events__row">
                         <span class="events__date">11 апреля</span>
-                        <a href="#" class="events__reg-link">Регистрация открыта</a>
+                        <span class="events__reg-label">Регистрация открыта</span>
                     </div>
                     <div class="events__row">
                         <a href="#" class="events__name">Hackathon</a>
@@ -134,7 +105,4 @@
             </a>
         </div>
     </section>
-
-    {% include 'social-share.html' %}
-    {% include 'footer.html' %}
 {% endblock %}
