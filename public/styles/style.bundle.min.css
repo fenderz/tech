@@ -1278,11 +1278,10 @@ a.button_blue:active {
   text-align: center;
 }
 .social-share__button {
-  margin-right: 16px;
-  display: inline;
-}
-.social-share__button:last-child {
-  margin-right: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .social-share__button-svg {
   color: #0af;
@@ -1292,6 +1291,17 @@ a.button_blue:active {
 }
 .social-share__button-svg:hover {
   color: #ff6163;
+}
+@media screen and (max-width: 580px) {
+  .social-share__button {
+    margin-bottom: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .social-share__button-svg {
+    width: 45px;
+    height: 45px;
+  }
 }
 .footer {
   border-top: 1px solid #e8e8e8;
