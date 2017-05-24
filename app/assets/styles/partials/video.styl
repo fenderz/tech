@@ -9,14 +9,14 @@
         margin-right: 4%
 
         ^[0]_inner &
-            margin-bottom: 40px
+            margin-bottom: 4%
 
         &:nth-child(2n+2)
             margin-right: 0
 
     &__img-link
         display block
-        margin-bottom: 20px
+        margin-bottom: 3%
         position: relative
 
         &::before
@@ -63,14 +63,22 @@
         link()
         title(3)
 
+    &_inner
+        padding-top: 5px
+
 @media $media-mobile
    .video
        white-space: normal
 
        &__item
            width: auto
-           margin: 0 0 20px
            display: block
+
+           ^[0]_inner &
+               margin: 0 0 7%
+
+           &:last-child
+               margin-bottom: 0 !important
 
        &__img-link
            margin-bottom: 10px
@@ -78,3 +86,6 @@
            &::before
                width: 40px
                height: 40px
+
+       &_inner
+           padding-top: 0

@@ -707,6 +707,7 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .cover-section__title {
+    line-height: 1.3;
     font-size: 46px;
     font-family: 'latoblack', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
@@ -759,6 +760,7 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .page-section__title {
+    line-height: 1.3;
     font-size: 22px;
     font-family: 'latobold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
@@ -776,6 +778,7 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .page-section__text {
+    line-height: 1.3;
     font-size: 20px;
     font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
@@ -874,6 +877,7 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .events__name {
+    line-height: 1.3;
     font-size: 16px;
     font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
@@ -902,14 +906,14 @@ a.button_blue:active {
   margin-right: 4%;
 }
 .video_inner .video__item {
-  margin-bottom: 40px;
+  margin-bottom: 4%;
 }
 .video__item:nth-child(2n+2) {
   margin-right: 0;
 }
 .video__img-link {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
   position: relative;
 }
 .video__img-link::before {
@@ -965,9 +969,13 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .video__name {
+    line-height: 1.3;
     font-size: 16px;
     font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
+}
+.video_inner {
+  padding-top: 5px;
 }
 @media screen and (max-width: 580px) {
   .video {
@@ -975,8 +983,13 @@ a.button_blue:active {
   }
   .video__item {
     width: auto;
-    margin: 0 0 20px;
     display: block;
+  }
+  .video_inner .video__item {
+    margin: 0 0 7%;
+  }
+  .video__item:last-child {
+    margin-bottom: 0 !important;
   }
   .video__img-link {
     margin-bottom: 10px;
@@ -984,6 +997,9 @@ a.button_blue:active {
   .video__img-link::before {
     width: 40px;
     height: 40px;
+  }
+  .video_inner {
+    padding-top: 0;
   }
 }
 .vacancies {
@@ -1107,6 +1123,7 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .popup__vacancies h2 {
+    line-height: 1.3;
     font-size: 22px;
     font-family: 'latobold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
@@ -1120,6 +1137,7 @@ a.button_blue:active {
 }
 @media screen and (max-width: 580px) {
   .popup__vacancies h3 {
+    line-height: 1.3;
     font-size: 16px;
     font-family: 'latoregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   }
