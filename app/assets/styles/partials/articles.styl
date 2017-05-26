@@ -1,0 +1,57 @@
+.articles
+    padding: 20px 0 0
+    text-align: left
+
+    &__item
+        display: inline-block
+        vertical-align: top
+        width: 31%
+        margin-right: 3.5%
+        padding-bottom: 4%
+
+        &:nth-child(3n+3)
+            margin-right: 0
+
+    &__img-link
+        display block
+        margin-bottom: 20px
+
+    &__row
+        margin-top: 5px
+        font-family: $font-family-lato
+
+    &__date
+        display: inline-block
+        vertical-align: baseline
+        font-size: 20px
+        margin-right: 5px
+
+    &__label
+        text-decoration: none
+        display: inline-block
+        vertical-align: baseline
+        font-size: 16px
+        color: $color-grey-40
+
+    &__name
+        link()
+        title(3)
+
+@media $media-mobile
+   .articles
+       white-space: normal
+       padding-top: 0
+
+       &__item
+           width: auto
+           display: block
+           margin: 0 0 3% !important
+
+           &:last-child
+               margin-bottom: 0 !important
+
+       &__img-link
+           margin-bottom: 0
+
+       &__date
+           font-size: 16px

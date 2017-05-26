@@ -6,27 +6,157 @@
 
 {% block content %}
     {% include 'header.html' with {active: 'articles'} only %}
-    <section class="page-section page-section_events">
+    <section class="page-section page-section_articles">
         <div class="page-section__content">
             <h2 class="page-section__title page-section__title_left">Публикации</h2>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <ul class="articles">
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">18 июня</span>
+                        <span class="articles__label">Администрирование</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://avitotech.timepad.ru/event/332038/" class="articles__name">
+                            История хранилища картинок Avito
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">15 мая</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/328720/" class="articles__name">
+                            Совместный просмотр Google I/O в офисе Avito
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">27 апреля</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/327486/" class="articles__name">
+                            Paparazzo. Мощный, стильный, свой. Часть II
+                        </a>
+                    </div>
+                </li>
+
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">19 апреля</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/326774/" class="articles__name">
+                            Paparazzo. Мощный, стильный, свой. Часть I
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">14 апреля</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/326524/" class="articles__name">
+                            Отчет и материалы SPA meetup'а 8 апреля 2017
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">4 апреля</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/325632/" class="articles__name">
+                            Второе почетное. Заметки участника конкурса Dstl Satellite Imagery Feature Detection
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">28 марта</span>
+                        <span class="articles__label">Администрирование</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/325026/" class="articles__name">
+                            Организация инфраструктуры с помощью Kubernetes и Helm. Видеозаписи докладов с Kubernetes meetup 22 марта 2017
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">22 марта</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/324508/" class="articles__name">
+                            Машинное обучение в Avito. Видеозаписи со встречи кейс-клуба Data Science 14 марта
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">15 марта</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/323900/" class="articles__name">
+                            PG Metricus — сбор метрик из plpgsql кода или как три строчки кода упростили жизнь
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">9 марта</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/323514/" class="articles__name">
+                            Видеозаписи со встречи CocoaHeads 1 марта 2017
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">3 марта</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/322510/" class="articles__name">
+                            Vertica+Anchor Modeling = запусти рост своей грибницы
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">22 февраля</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/322384/" class="articles__name">
+                            Видео докладов с Go 1.8 release party Moscow
+                        </a>
+                    </div>
+                </li>
+                <li class="articles__item">
+                    <div class="articles__row">
+                        <span class="articles__date">14 февраля</span>
+                        <span class="articles__label">Разработка</span>
+                    </div>
+                    <div class="articles__row">
+                        <a target="_blank" href="https://habrahabr.ru/company/avito/blog/321796/" class="articles__name">
+                            Где живут ваши объявления?
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 {% endblock %}
