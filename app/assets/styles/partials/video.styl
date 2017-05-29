@@ -18,6 +18,7 @@
         display block
         margin-bottom: 3%
         position: relative
+        overflow: hidden
 
         &::before
             content: ''
@@ -40,16 +41,17 @@
         display: block
         max-width: 100%
         height: auto
+        margin: -10% 0
 
     &__about
         position: absolute
         left: 0
         right: 0
         bottom: 0
-        padding: 3% 60px 3% 3%
+        padding: 2% 60px 2% 3%
         text-decoration: none
         color: $color-white
-        background: $color-dark
+        background: rgba(#000, 0.5)
         font-size: 16px
         text-overflow: ellipsis
         white-space: nowrap
