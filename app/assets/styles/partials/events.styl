@@ -7,12 +7,19 @@
         vertical-align: top
         width: 31%
         margin-right: 3.5%
+        transition: opacity $animation-time $timing-function
 
         ^[0]_inner &
             margin-bottom: 35px
 
         &:nth-child(3n+3)
             margin-right: 0
+
+        &_archive
+            opacity: 0.6
+
+            &:hover
+                opacity: 1
 
     &__img-link
         display block
