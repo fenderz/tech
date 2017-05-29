@@ -40,7 +40,21 @@ gulp.task('scripts', function() {
 
 gulp.task('imageMin', function() {
     return gulp.src(imagePath)
-        .pipe(imagemin())
+        .pipe(imagemin([
+            imagemin.svgo({
+                plugins: [
+                    { optimizationLevel: 3 },
+                    { progessive: true },
+                    { interlaced: true },
+                    { removeViewBox: false },
+                    { removeUselessStrokeAndFill: false },
+                    { cleanupIDs: false }
+                ]
+            }),
+            imagemin.gifsicle(),
+            imagemin.jpegtran(),
+            imagemin.optipng()
+        ]))
         .pipe(gulp.dest('./public/img'))
 });
 
