@@ -13,7 +13,7 @@ const rename = require('gulp-rename');
 
 const stylesPath = 'app/assets/styles/*.{styl,css}';
 const scriptsPath = 'app/assets/scripts/*.js';
-const imagePath = 'app/assets/images/*';
+const imagePath = 'app/assets/images/**';
 const templatesPath = './views/';
 
 gulp.task('styles', function() {
