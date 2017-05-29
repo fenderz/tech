@@ -6,6 +6,7 @@ const concat = require('gulp-concat');
 const nodemon = require('gulp-nodemon');
 const uglify = require('gulp-uglify');
 const csso = require('gulp-csso');
+const autoprefixer = require('gulp-autoprefixer');
 const htmlmin = require('gulp-html-minifier');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
@@ -23,6 +24,10 @@ gulp.task('styles', function() {
                 name: 'url',
                 limit: false
             }
+        }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', '> 1%'],
+            cascade: false
         }))
         .pipe(csso())
         .pipe(rename({suffix: '.bundle.min'}))
